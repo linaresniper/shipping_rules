@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Rules</title>
+</head>
+<body>
+
+    <form>
+        <h1>Shipping Rules</h1>
+
+        <label for="weight">Enter weight (kg):</label>
+        <input id="weight" type="number" placeholder="kg">
+
+        <label for="isInternational">Is international?</label>
+        <select id="isInternational">
+            <option value="true">yes</option>
+            <option value="false">no</option>
+        </select>
+
+        <label for="isUrgent">Is urgent?</label>
+        <select id="isUrgent">
+            <option value="true">yes</option>
+            <option value="false">no</option>
+        </select>
+
+        <button type="button" onclick="shippingRules()">Calculate</button>
+
+        <p id="result"></p>
+    </form>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
